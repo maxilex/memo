@@ -18,6 +18,27 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA80tiAIIY00fx8RnU5e6Ao8r2F50rBe34",
+      authDomain: "memo-lex.firebaseapp.com",
+      databaseURL: "https://memo-lex.firebaseio.com",
+      projectId: "memo-lex",
+      storageBucket: "memo-lex.appspot.com",
+      messagingSenderId: "758635491332",
+      appId: "1:758635491332:web:61d59c365d598b60054551"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
